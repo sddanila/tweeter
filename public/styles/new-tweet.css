@@ -1,0 +1,93 @@
+
+section {
+    background: #eee;
+    border: 1px solid #BBB6B5;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    margin: 20px 75px;
+}
+
+textarea {
+    padding: 7px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.new-tweet h2 {
+    text-align: left;
+    border-bottom: black solid 2px;
+}
+
+main input {
+    float: left;
+}
+
+main .counter {
+    float: right;
+    text-align: right;
+    display: inline;
+}
+
+#container {
+    background-color: white;
+    padding: 0;
+}
+
+.tweet header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#eee;
+    margin: 0;
+    height: 20%;
+    padding: 7px;
+    color: #7D897D;
+}
+
+
+.tweet p {
+    text-align: left;
+    padding: 7px;
+}
+
+.tweet footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #BBB6B5;
+    font-size: 0.9rem;
+    padding: 0.2em;
+    margin: 0;
+}
+
+
+.tweet .userIcon {
+    max-height: 20px;
+}
+
+.sn-icons {
+    opacity: 0;
+    transition: all 0.3s ease;
+    align-items: center;
+    color: #00a087;
+}
+
+#container:hover {
+    border: 1px solid #244751;
+    color: #244751;
+}
+
+#container:hover .sn-icons {
+    opacity: 0.8;
+}
+
+#container:hover .new-tweet-header {
+    color: #244751;
+}
+
+.overlimit {
+ color: red;
+}

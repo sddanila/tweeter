@@ -18,8 +18,18 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.container {
+  width: 700px;
+  min-height: 700px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 110px auto;
+}
