@@ -51,9 +51,11 @@ $(document).ready($(function() {
     $form.on('submit', function (event) {
         event.preventDefault();
         let tweetText = $('#textarea').val();
-        if( tweetText.length > 140 || tweetText.length <= 0){
+        if( tweetText.length > 140){
             alert("Your tweet is too long or too short!");
-        } else {
+        } else if (tweetText.length <= 0){
+            $()
+        }else {
             console.log('Tweet submitted, performing ajax call...');
             $.post({
                 url: 'http://localhost:8080/tweets',

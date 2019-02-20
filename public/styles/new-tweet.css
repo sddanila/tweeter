@@ -95,3 +95,16 @@ main .counter {
 .overlimit {
  color: red;
 }
+
+.error {
+    display: none;
+    text-align: left;
+    border: 2px solid;
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 10px 5px 10px 5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+}
