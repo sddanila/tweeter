@@ -51,15 +51,25 @@ $(document).ready($(function() {
             alert("Your tweet is too long or too short!");
         } else {
             console.log('Tweet submitted, performing ajax call...');
-            $.getJSON({
+            $.post({
                 url: 'http://localhost:8080/tweets',
-                method: 'GET',
-                data: {get_param: 'value'},
+                method: 'POST',
+                data: { text: tweetText },
                 success: function (data) {
-                    renderTweets(data);
-                    console.log('Success!');
+                    $('#tweets-container').append(createTweetElement(data);
+                    console.log(data);
                 }
             })
+        }
+    });
+
+    $.getJSON({
+        url: 'http://localhost:8080/tweets',
+        method: 'GET',
+        data: {get_param: 'value'},
+        success: function (data) {
+            renderTweets(data);
+            console.log('First Success!');
         }
     });
 }))
