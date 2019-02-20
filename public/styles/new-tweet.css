@@ -18,16 +18,7 @@ textarea {
 }
 
 .new-tweet {
-    /* display: none; */
-    overflow-y: hidden;
-    overflow-x: hidden;
-	max-height: 500px;
-	transition-property: all 0.5s ease;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-.new-tweet.closed {
-	max-height: 0;
+    display: none;
 }
 
 .new-tweet h2 {

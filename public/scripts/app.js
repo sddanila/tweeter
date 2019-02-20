@@ -76,7 +76,9 @@ $(document).ready($(function() {
             console.log('Success loading original database!');
         }
     });
-    $('.compose-button').click(function(){
-        $('.new-tweet').toggle('.closed');
-    })
+
+    $('.compose-button').click(function() {
+        $('.new-tweet').slideToggle( "slow" );
+        $('#textarea').select();
+    });
 }))
