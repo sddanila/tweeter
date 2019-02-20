@@ -52,9 +52,13 @@ $(document).ready($(function() {
         event.preventDefault();
         let tweetText = $('#textarea').val();
         if( tweetText.length > 140){
-            alert("Your tweet is too long or too short!");
+            $('.error').slideDown('slow', function(){
+                document.querySelector('.error').innerHTML = "Error! Please write a shorter tweet";
+            })
         } else if (tweetText.length <= 0){
-            $()
+            $('.error').slideDown('slow', function(){
+                document.querySelector('.error').innerHTML = "Error! You need to write something first!";
+            })
         }else {
             console.log('Tweet submitted, performing ajax call...');
             $.post({
