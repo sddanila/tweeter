@@ -51,6 +51,9 @@ $(document).ready($(function() {
     $form.on('submit', function (event) {
         event.preventDefault();
         let tweetText = $('#textarea').val();
+        if (!($('.error').css('display') === 'none')){
+            $('.error').slideUp();
+        }
         if( tweetText.length > 140){
             $('.error').slideDown('slow', function(){
                 document.querySelector('.error').innerHTML = "Error! Please write a shorter tweet";
@@ -59,7 +62,7 @@ $(document).ready($(function() {
             $('.error').slideDown('slow', function(){
                 document.querySelector('.error').innerHTML = "Error! You need to write something first!";
             })
-        }else {
+        } else {
             console.log('Tweet submitted, performing ajax call...');
             $.post({
                 url: 'http://localhost:8080/tweets',
