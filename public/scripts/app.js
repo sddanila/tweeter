@@ -79,22 +79,22 @@ function createTweetElement(data) {
     let time = data.created_at;
 
     let $tweet = $(".tweets-container").append(`
-    <section id="container">
-        <article class="tweet">
-          <header class="new-tweet-header">
-            <h3 class="name-h3">
-              <img class="userIcon" src=${avatar}>
-              ${username}
-            </h3>
-            <span class="userId">${userId}</span>
-          </header>
+        <section id="container">
+            <article class="tweet">
+            <header class="new-tweet-header">
+                <h3 class="name-h3">
+                <img class="userIcon" src=${avatar}>
+                ${username}
+                </h3>
+                <span class="userId">${userId}</span>
+            </header>
             <p>${tweetText}</p>
-          <footer class="tweet-footer">
-            <div>${time}</div>
-            <div class="sn-icons"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i><div>
-          </footer>
-        </article>
-      </section>
+            <footer class="tweet-footer">
+                <div>${time}</div>
+                <div class="sn-icons"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i><div>
+            </footer>
+            </article>
+        </section>
     `);
     return $tweet;
 }
