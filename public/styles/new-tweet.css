@@ -17,6 +17,10 @@ textarea {
     width: 100%;
 }
 
+.new-tweet {
+    display-none;
+}
+
 .new-tweet h2 {
     text-align: left;
     border-bottom: black solid 2px;

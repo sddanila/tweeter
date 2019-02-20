@@ -29,10 +29,16 @@
     color: #ffffff !important;
 }
 
-#compose-button {
+.compose-button {
     color: #00a087;
     border-radius: 2px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: black solid 1px;
+    background-color: white;
+    box-shadow: 0 3px #999;
+}
+
+.compose-button :active {
+    box-shadow: 0 1px #d2d5db;
 }
