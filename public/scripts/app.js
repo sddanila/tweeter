@@ -16,7 +16,8 @@ function createTweetElement(data) {
     let avatar = data.user.avatars.small;
     let userId = data.user.handle;
     let tweetText = escape(data.content.text);
-    let time = data.created_at;
+    let time = daysSince(data.created_at);
+
 
     let $tweet = `
         <section id="container">
@@ -47,6 +48,16 @@ function renderTweets(data){
 }
 
 $(document).ready($(function() {
+    // GET EXISTING TWEETS FROM DATABASE
+        $.getJSON({
+            url: 'http://localhost:8080/tweets',
+            method: 'GET',
+            data: {get_param: 'value'},
+            success: function (data) {
+                renderTweets(data);
+                console.log('Success loading original database!');
+            }
+        });
     let $form = $('#tweet-form');
     $form.on('submit', function (event) {
         event.preventDefault();
@@ -77,19 +88,16 @@ $(document).ready($(function() {
             $('.counter').val(140);
         }
     });
-// GET EXISTING TWEETS FROM DATABASE
-    $.getJSON({
-        url: 'http://localhost:8080/tweets',
-        method: 'GET',
-        data: {get_param: 'value'},
-        success: function (data) {
-            renderTweets(data);
-            console.log('Success loading original database!');
-        }
-    });
 
     $('.compose-button').click(function() {
         $('.new-tweet').slideToggle( "slow" );
         $('#textarea').select();
     });
 }))
+
+// HELPER FUNCTION 
+function daysSince (date){
+    let days = Math.ceil((Date.now() - date) / 86400000);
+    console.log(days);
+    return `${days} days ago`
+}
