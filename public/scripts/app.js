@@ -73,6 +73,8 @@ $(document).ready($(function() {
                     $('#container').text
                 }
             })
+            $('textarea').val('');
+            $('.counter').val(140);
         }
     });
 // GET EXISTING TWEETS FROM DATABASE
