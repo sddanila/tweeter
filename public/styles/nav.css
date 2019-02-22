@@ -35,8 +35,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border: black solid 1px;
-    background-color: #cff7ee;
-    box-shadow: 0 3px #999;
+    background-color: #f8f8f8;
+    box-shadow: 2px 1px rgb(226, 226, 226);
     transition-duration: 0.4s;
 }
 
@@ -46,5 +46,5 @@
 }
 
 .compose-button:active {
-    box-shadow: 0 1px #d2d5db;
+    box-shadow: none;
 }

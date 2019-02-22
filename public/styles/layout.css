@@ -29,7 +29,8 @@ body {
   width: 700px;
   min-height: 700px;
   padding-top: 10px;
+  padding-bottom: 50px;
   text-align: center;
   background-color: #ffffff;
-  margin: 110px auto;
+  margin: 70px auto;
 }
