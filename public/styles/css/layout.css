@@ -34,17 +34,10 @@ body .tweets-container {
     width: 100%;
   }
 }
-
-@media print{
-  .new-tweet {
-    display: none;
-  };
-  #nav-bar {
-    display: none;
-  };
-  .tweets-container {
+@media print {
+  body .tweets-container {
     width: 100%;
-  };
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
