@@ -55,16 +55,16 @@ This project is licensed under the LHL License
 ## App Flow
 
 * Tweeter Page upon load
-!["Landing Page"](https://github.com/sddanila/TinyApp/blob/master/docs/welcome_page.png?raw=true)
+!["Tweeter Page upon load"](https://github.com/sddanila/tweeter/blob/master/docs/page-load.png)
 
-* Registration Page
-!["Registration Page"](https://github.com/sddanila/TinyApp/blob/master/docs/registration_page.png?raw=true)
+* The new tweet box
+!["The new tweet box"](https://github.com/sddanila/tweeter/blob/master/docs/tweet-box.png)
 
-* Login Page
-!["Login Page"](https://github.com/sddanila/TinyApp/blob/master/docs/login_page.png)
+* Social network icons
+!["Social network icons"](https://github.com/sddanila/tweeter/blob/master/docs/social-network-icons.png)
 
-* URLs Index Page
-!["URLs Index Page"](https://github.com/sddanila/TinyApp/blob/master/docs/index_page.png)
+* Error message when there is no tweet
+!["Error message when there is no tweet"](https://github.com/sddanila/tweeter/blob/master/docs/error-no-tweet.png)
 
-* Edit Page
-!["Edit Page"](https://github.com/sddanila/TinyApp/blob/master/docs/edit_page.png)
+* Error message when tweet is too long
+!["Error message when tweet is too long"](https://github.com/sddanila/tweeter/blob/master/docs/error-long-tweet.png)
