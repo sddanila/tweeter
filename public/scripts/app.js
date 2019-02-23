@@ -20,11 +20,11 @@ function createTweetElement(data) {
 
 
     let $tweet = `
-        <section class="old-tweets">
-            <article class="tweet">
+        <section class='old-tweets'>
+            <article class='tweet'>
             <header>
                 <h3>
-                <img class="userIcon" src=${avatar}>
+                <img class='userIcon' src=${avatar}>
                 ${username}
                 </h3>
                 <span>${userId}</span>
@@ -32,7 +32,7 @@ function createTweetElement(data) {
             <p>${tweetText}</p>
             <footer>
                 <div>${time}</div>
-                <div class="sn-icons"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i><div>
+                <div class='sn-icons'><i class='fas fa-flag'></i><i class='fas fa-retweet'></i><i class='fas fa-heart'></i><div>
             </footer>
             </article>
         </section>
@@ -67,11 +67,11 @@ $(document).ready($(function() {
         }
         if( tweetText.length > 140){
             $('.error').slideDown('slow', function(){
-                document.querySelector('.error').innerHTML = "Error! Please write a shorter tweet";
+                document.querySelector('.error').innerHTML = 'Error! Please write a shorter tweet';
             })
         } else if (tweetText.length <= 0){
             $('.error').slideDown('slow', function(){
-                document.querySelector('.error').innerHTML = "Error! You need to write something first!";
+                document.querySelector('.error').innerHTML = 'Error! You need to write something first!';
             })
         } else {
             console.log('Tweet submitted, performing ajax call...');
@@ -81,7 +81,7 @@ $(document).ready($(function() {
                 data: { text: tweetText },
                 success: function (data) {
                     $('.new-tweet').after(createTweetElement(data));
-                    $('#container').text
+                    $('.old-tweet').text
                 }
             })
             $('textarea').val('');
@@ -90,7 +90,7 @@ $(document).ready($(function() {
     });
 
     $('.compose-button').click(function() {
-        $('.new-tweet').slideToggle( "slow" );
+        $('.new-tweet').slideToggle( 'slow' );
         $('#textarea').select();
     });
 }))
@@ -98,6 +98,5 @@ $(document).ready($(function() {
 // HELPER FUNCTION 
 function daysSince (date){
     let days = Math.ceil((Date.now() - date) / 86400000);
-    console.log(days);
     return `${days} days ago`
 }

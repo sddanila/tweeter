@@ -7,11 +7,11 @@ $(document).ready(function() {
         let length = ($(this).val().length);
         let counter = $(this).siblings('.counter');
         if (length > charactersAllowed){
-            $('#textarea').addClass("overlimit");
+            $('#textarea').addClass('overlimit');
             counter.addClass("overlimit");
         } else {
-            $('#textarea').removeClass("overlimit");
-            counter.removeClass("overlimit");
+            $('#textarea').removeClass('overlimit');
+            counter.removeClass('overlimit');
         }
         let charactersLeft = charactersAllowed - $(this).val().length;
         counter.text(charactersLeft);

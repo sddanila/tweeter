@@ -8,10 +8,7 @@
   width: 100vw;
   background-color: #00a087;
   font: #e8fdff;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px 2em;
   margin: 0;
 }
 #nav-bar .logo {
@@ -24,7 +21,8 @@
   float: left;
   font-size: 2rem;
   line-height: 2.5;
-  color: #ffffff !important;
+  color: #ffffff;
+  text-shadow: 1px 1px #f8f8f8;
 }
 #nav-bar .compose-button {
   color: #00a087;
