@@ -79,4 +79,4 @@ This project is licensed under the LHL License
 !["Error message when tweet is too long"](https://github.com/sddanila/tweeter/blob/master/docs/error-long-tweet.png)
 
 ##### Print preview
-!["Print preview"](https://github.com/sddanila/tweeter/blob/master/docs/error-long-tweet.png)
+!["Print preview"](https://github.com/sddanila/tweeter/blob/master/docs/print-preview.png)
