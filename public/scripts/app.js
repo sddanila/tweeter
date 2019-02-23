@@ -20,7 +20,7 @@ function createTweetElement(data) {
 
 
     let $tweet = `
-        <section id="container">
+        <section class="old-tweets">
             <article class="tweet">
             <header>
                 <h3>

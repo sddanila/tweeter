@@ -29,11 +29,22 @@ body .tweets-container {
   background-color: #ffffff;
   margin: 70px auto;
 }
-
 @media screen and (max-width: 900px) {
-  .tweets-container {
+  body .tweets-container {
     width: 100%;
   }
+}
+
+@media print{
+  .new-tweet {
+    display: none;
+  };
+  #nav-bar {
+    display: none;
+  };
+  .tweets-container {
+    width: 100%;
+  };
 }
 
 /*# sourceMappingURL=layout.css.map */

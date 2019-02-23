@@ -28,12 +28,9 @@ body {
         padding-bottom: 50px;
         text-align: center;
         background-color: #ffffff;
-        margin: 70px auto;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .tweets-container {
-    width: 100%;
+        margin: 70px auto; 
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
     }
 }

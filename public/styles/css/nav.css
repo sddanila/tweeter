@@ -7,11 +7,7 @@
   height: 80px;
   width: 100vw;
   background-color: #00a087;
-  font: #e8fdff;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px 2em;
   margin: 0;
 }
 #nav-bar .logo {
@@ -24,7 +20,8 @@
   float: left;
   font-size: 2rem;
   line-height: 2.5;
-  color: #ffffff !important;
+  color: #ffffff;
+  text-shadow: 1px 1px #f8f8f8;
 }
 #nav-bar .compose-button {
   color: #00a087;
@@ -33,7 +30,7 @@
   padding-bottom: 15px;
   border: black solid 1px;
   background-color: #f8f8f8;
-  box-shadow: 2px 1px #e2e2e2;
+  box-shadow: 1px 1px #e2e2e2;
   transition-duration: 0.4s;
 }
 #nav-bar .compose-button:hover {
@@ -42,6 +39,15 @@
 }
 #nav-bar .compose-button:active {
   box-shadow: none;
+}
+
+@media print{
+  .new-tweet {
+    display: none;
+  };
+  #nav-bar {
+    display: none;
+  };
 }
 
 /*# sourceMappingURL=nav.css.map */

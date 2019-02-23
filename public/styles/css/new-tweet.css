@@ -42,11 +42,11 @@ section .error {
   background-color: #FFBABA;
 }
 
-#container {
+.old-tweets {
   background-color: white;
   padding: 0;
 }
-#container header {
+.old-tweets header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,11 +56,11 @@ section .error {
   padding: 7px;
   color: #7D897D;
 }
-#container p {
+.old-tweets p {
   text-align: left;
   padding: 7px;
 }
-#container footer {
+.old-tweets footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #BBB6B5;
@@ -68,26 +68,26 @@ section .error {
   padding: 0.2em;
   margin: 0;
 }
-#container .userIcon {
+.old-tweets .userIcon {
   max-height: 20px;
 }
-#container .sn-icons {
+.old-tweets .sn-icons {
   opacity: 0;
   transition: all 0.3s ease;
   align-items: center;
   color: #00a087;
 }
 
-#container:hover {
+.old-tweets:hover {
   border: 1px solid #244751;
   color: #244751;
 }
 
-#container:hover .sn-icons {
+.old-tweets:hover .sn-icons {
   opacity: 0.8;
 }
 
-#container:hover .new-tweet-header {
+.old-tweets:hover .new-tweet-header {
   color: #244751;
 }
 
