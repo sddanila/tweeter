@@ -5,14 +5,15 @@ $(document).ready(function() {
     let charactersAllowed = 140;
     $('#textarea').on('keydown', function (){
         let length = ($(this).val().length);
+        let counter = $(this).siblings('.counter');
         if (length > charactersAllowed){
             $('#textarea').addClass("overlimit");
-            $('.counter').addClass("overlimit");
+            counter.addClass("overlimit");
         } else {
             $('#textarea').removeClass("overlimit");
-            $('.counter').removeClass("overlimit");
+            counter.removeClass("overlimit");
         }
         let charactersLeft = charactersAllowed - $(this).val().length;
-        $('.counter').text(charactersLeft);
+        counter.text(charactersLeft);
     })
 });
